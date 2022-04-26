@@ -1,0 +1,4 @@
+[submodule "stacx"]
+	path = stacx
+	url = git@github.com:accelerando-consulting/stacx.git
+	branch = submodule
