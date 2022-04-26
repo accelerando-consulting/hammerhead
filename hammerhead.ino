@@ -1,5 +1,5 @@
 #include "config.h"
-#include "stacx/stacx_main.h"
+#include "stacx/stacx.h"
 
 #include "stacx/leaf_fs_preferences.h"
 #include "stacx/leaf_ip_esp.h"
@@ -30,15 +30,3 @@ Leaf *leaves[] = {
 	NULL
 };
 
-void setup() 
-{
-  stacx_setup();
-}
-
-void loop() 
-{
-  stacx_loop();
-}
-
-  
-  

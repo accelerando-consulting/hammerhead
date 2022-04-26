@@ -25,21 +25,27 @@ PROGRAM ?= $(shell basename $(PWD))
 MAIN = $(PROGRAM).ino
 SRCS = $(MAIN) \
 	config.h \
-	leaves.h \
 	app_*.h 
 
 # LIBS are the libraries you can install through the arduino library manager
 # Format is LIBNAME[@VERSION]
 LIBS =  ArduinoJson@6.14.0 \
+	DHT12\ sensor\ library \
+	GeekFactory\ Shell\ Library \
+	Max44009 \
+	NtpClientLib \
+	RTClib \
+	TFT_eSPI \
 	Time \
-	NtpClientLib
+	WiFiManager
 
 # EXTRALIBS are the libraries that are not in the arduino library manager, but installed via git
 # Format is LIBNAME@REPOURL
 EXTRALIBS = AsyncTCP@https://github.com/me-no-dev/AsyncTCP.git \
 	ESPAsyncTCP@https://github.com/me-no-dev/ESPAsyncTCP.git \
 	async-mqtt-client@https://github.com/marvinroger/async-mqtt-client.git \
-	SimpleMap@https://github.com/spacehuhn/SimpleMap \
+	SimpleMap@https://github.com/spacehuhn/SimpleMap 
+
 #	WIFIMANAGER-ESP32@https://github.com/ozbotics/WIFIMANAGER-ESP32 
 
 include stacx/cli.mk
