@@ -4,9 +4,10 @@
 // storage mechanism, or via the captive-portal setup process.
 //
 
-#define BUILD_NUMBER 1
+#define BUILD_NUMBER 55
 
 #define DEBUG_LEVEL 1
+#define DEBUG_FLUSH 1
 #define MAX_DEBUG_LEVEL 3
 
 #define DEVICE_ID "hammerhead"

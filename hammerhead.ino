@@ -29,8 +29,14 @@ Leaf *leaves[] = {
 	new ShellLeaf("shell"),
 	new IpEspLeaf("esp","",false),
 	new PubsubEspAsyncMQTTLeaf("espmqtt","",false,true,false),
-	new TFTLeaf("screen",1),  // see Makefile for pin defines
-	//new SDCardLeaf("sdcard"), 
+	new TFTLeaf("screen",0),  // see Makefile for pin defines
+	new WireBusLeaf("wire"),
+
+	new RTCLeaf("rtc"),
+	new Dht12Leaf("dht"),
+	new MAX44009Leaf("lux"),
+
+	new SDCardLeaf("sdcard"), 
 	// for C3
 	//new PWMSensorLeaf("co2",LEAF_PIN(2)), 
 	//new SDS011SensorLeaf("dust",LEAF_PIN(4)), 
@@ -38,11 +44,7 @@ Leaf *leaves[] = {
 	new PWMSensorLeaf("co2",LEAF_PIN(36)), 
 	new SDS011Leaf("dust",2,9600,SERIAL_8N1,26,25), 
 
-	new WireBusLeaf("wire"),
-	new RTCLeaf("rtc"),
-	new Dht12Leaf("dht"),
-	new MAX44009Leaf("lux"),
-	new HammerheadAppLeaf("hammerhead", "screen,dht,lux,co2,dust,sdcard"),
+	new HammerheadAppLeaf("hammerhead", "screen,rtc,dht,lux,sdcard,co2,dust"),
 	NULL
 };
 
