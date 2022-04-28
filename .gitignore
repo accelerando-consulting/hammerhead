@@ -1,2 +1,6 @@
 .build
-*.bin
+*.ino.bin
+*.ino.bootloader.bin
+*.ino.partitions.bin
+*.ino.elf
+*.ino.map
